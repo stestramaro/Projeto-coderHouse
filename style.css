@@ -14,14 +14,34 @@
 	src: local(Montserrat-Medium), url(fonte/Montserrat-Medium.ttf)
   } 
 
-/* min-width & max-width */
-@media screen and (min-width: 600px) and (max-width: 900px) 
+  @media screen and (max-width: 600px) {
+
+	.colunas, .menu {
+		font-family: "Montserrat", sans-serif;
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+  }
+
+  @keyframes gradient {
+	0% {
+	  background-position: 0 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0 50%;
+	}
+  }
+  
 
   *{
 	font-family: Montserrat-Regular;
   }
 
- 
 
 .fonte2{
 	font-family: 'Montserrat-Bold';
@@ -40,6 +60,15 @@
     
 }
 
+.gradient {
+	animation: gradient ease 5s infinite;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(-45deg, #a0b104, #d47853, #d8ac4e, #f3cb18)
+	  no-repeat;
+	background-size: 300% 300%;
+  }
 
 .flex-logo{
 	display: flex;
@@ -68,6 +97,8 @@
 		font-size: 1.3rem; 
 		list-style: none;
 	  }
+
+
 	  nav a:hover{
 		background-color: #ff9a00;
 		border-radius: 10px;
@@ -77,6 +108,7 @@
 		font-size: 1.5rem;
 		
 	  }
+	  
 
 .banner__topo {
     height: 520%;
@@ -90,18 +122,24 @@
 
 
 .p{
-	width: 50%;	
+	width: 100%;	
 }
 
 
 .linha{
 	display: flex;
 	flex-flow: row wrap;
-	align-items: stretch;
+	justify-content: center;
+
 	}
 
-.coluna-33 {
-		width: 33%;
+
+.colunas{
+	    margin-left: 8%;
+		margin-right: 8%;
+		padding-right: 0;
+		padding-left: 0;
+
 	 }
 
 .button {
@@ -119,6 +157,7 @@
 
   }
 
+  
 .rodape { 
     height: 10%;
     width: 100%;
