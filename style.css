@@ -40,6 +40,9 @@
 
   *{
 	font-family: Montserrat-Regular;
+	margin: 0;
+	padding: o;
+	
   }
 
 
@@ -68,6 +71,8 @@
 	background: linear-gradient(-45deg, #a0b104, #d47853, #d8ac4e, #f3cb18)
 	  no-repeat;
 	background-size: 300% 300%;
+	
+	
   }
 
 .flex-logo{
@@ -76,43 +81,35 @@
   }
 
 	
-	nav{
-		display: block;
-		align-items: center;
-		justify-content: space-around; 
-		flex-wrap: wrap;
-		background: #ff9a00;
-		margin: auto;
-		
-	  }
-
+  .menu-navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(247, 154, 2);
 	
-	  .menu {
-		display: flex;
-		justify-content: space-around;
-		margin: 0 auto;
-		padding: 30px;
-		max-width: 100%;
-		background: #ff9a00;	  
-		font-size: 1.3rem; 
-		list-style: none;
-	  }
+}
 
 
-	  nav a:hover{
-		background-color: #ff9a00;
-		border-radius: 10px;
-		color: azure;
-		text-decoration: none;
-		transition: 0.3s;
-		font-size: 1.5rem;
-		
-	  }
-	  
+.menu-navbar .menu {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+    margin: 20px 0 20px;
+    cursor: pointer;
+	
+	
+
+}
+
+.menu:hover {
+    color: #ffff;
+}
 
 .banner__topo {
     height: 520%;
     width: 100%;
+	
 }
 
 .banner__rodape {
@@ -122,14 +119,20 @@
 
 
 .p{
-	width: 100%;	
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 
 .linha{
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
+	display: inline;
+    justify-items: auto;
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
+
 
 	}
 
@@ -144,18 +147,37 @@
 
 .button {
 	display: grid;
-	grid-template-rows: auto;
+	grid-template-rows: row;
     background-color: #ff9a00; 
+	padding: 2% 2%;
     border: none;
-    color: black;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
 	font-family: 'Montserrat-Bold';
+	width: 100%;
 
   }
+
+  .button-1{ 
+    background-color: #ff9a00;
+	padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+
+
+}
+.button-1:hover{
+    background-color: #fa3d25;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
 
   
 .rodape { 
@@ -164,7 +186,7 @@
     margin-top: 10%;
     text-align: center;
     color: #000;
-	background-color:#ff9a00;
+	
 
 }
 
